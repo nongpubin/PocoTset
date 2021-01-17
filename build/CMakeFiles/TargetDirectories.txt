@@ -1,0 +1,3 @@
+/mnt/d/GitHubDesktop/PocoTset/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/GitHubDesktop/PocoTset/build/CMakeFiles/hello_bin.dir
+/mnt/d/GitHubDesktop/PocoTset/build/CMakeFiles/edit_cache.dir
