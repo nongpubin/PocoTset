@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-22 21:48:09
- * @LastEditTime: 2021-01-17 13:29:57
+ * @LastEditTime: 2021-01-18 23:01:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \PocoTset\STLtest\vector.cpp
@@ -55,6 +55,7 @@ int main()
 
 return 0;
 #if 0
+
 	vector<char> myevctor;
 	myevctor.resize(1024);
 	int length = sizeof(buff1) / sizeof(buff1[0]) - 1;
