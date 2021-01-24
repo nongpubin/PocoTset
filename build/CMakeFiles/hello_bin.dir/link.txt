@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++14    -rdynamic CMakeFiles/hello_bin.dir/main.cpp.o  -o hello_bin  -L/mnt/d/GitHubDesktop/PocoTset/lib/lib -Wl,-rpath,/mnt/d/GitHubDesktop/PocoTset/lib/lib -Wl,-Bstatic -lPocoFoundation -Wl,-Bdynamic 
+/usr/bin/c++  -std=c++14    -rdynamic CMakeFiles/hello_bin.dir/main.cpp.o  -o hello_bin  -L/mnt/d/GitHubDesktop/npb/lib/lib -Wl,-rpath,/mnt/d/GitHubDesktop/npb/lib/lib -Wl,-Bstatic -lPocoFoundation -Wl,-Bdynamic 

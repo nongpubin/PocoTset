@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/GitHubDesktop/PocoTset
+CMAKE_SOURCE_DIR = /mnt/d/GitHubDesktop/npb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/GitHubDesktop/PocoTset/build
+CMAKE_BINARY_DIR = /mnt/d/GitHubDesktop/npb/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/GitHubDesktop/PocoTset/build/CMakeFiles /mnt/d/GitHubDesktop/PocoTset/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/GitHubDesktop/npb/build/CMakeFiles /mnt/d/GitHubDesktop/npb/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/GitHubDesktop/PocoTset/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/GitHubDesktop/npb/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

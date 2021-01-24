@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-03-28 22:49:41
- * @LastEditTime: 2020-11-24 23:35:53
+ * @LastEditTime: 2021-01-24 10:55:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \PocoTset\main.cpp
@@ -11,8 +11,6 @@
 #include  <stdio.h>           
 #include "unistd.h" 
 #include <iostream>
-#include "DeflatingStream.h"
-
 #include <vector>
 #include <fstream>
 #include <fcntl.h>
@@ -22,7 +20,7 @@
 
 
 using namespace std;
-using namespace Poco;
+// using namespace Poco;
 
 char buff1[] = {"12345688888889"};
 char buff2[] = {"BAAAAAAAAAAAAAAAAB"};

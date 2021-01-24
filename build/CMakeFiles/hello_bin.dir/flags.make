@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/d/GitHubDesktop/PocoTset/PocoHead -I/mnt/d/GitHubDesktop/PocoTset/PocoHead/Net -I/mnt/d/GitHubDesktop/PocoTset/PocoHead/Poco 
+CXX_INCLUDES = -I/mnt/d/GitHubDesktop/npb/PocoHead -I/mnt/d/GitHubDesktop/npb/PocoHead/Net -I/mnt/d/GitHubDesktop/npb/PocoHead/Poco 
 
