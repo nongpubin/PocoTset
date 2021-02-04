@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-24 10:51:52
- * @LastEditTime: 2021-01-24 15:06:19
+ * @LastEditTime: 2021-01-25 23:06:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \npb\DesignPattern\map_send.cpp
@@ -55,11 +55,15 @@ public:
         return true;
     }
 
-    FDS() {}
+    FDS(std::string name, std::string seckey) {
+        _name = name;
+        _seckey = seckey;
+    }
     ~FDS(){}
     
 private:
-    
+    std::string _name;
+    std::string _seckey;
 };
 
 
@@ -136,7 +140,7 @@ int main()
     mCleanRecord.UploadCleanRecord();
 
 //-----------------------------------
-    FDS *mFds = new FDS();
+    FDS *mFds = new FDS("name", "name");
     // MapSend mMapSendFds(mFds);
     // CleanRecord mCleanRecordFds(mFds);
     mMapSend.ChangeMethod(mFds);
