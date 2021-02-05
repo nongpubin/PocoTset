@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-22 21:48:09
- * @LastEditTime: 2021-01-18 23:01:36
+ * @LastEditTime: 2021-02-05 10:53:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \PocoTset\STLtest\vector.cpp
@@ -19,8 +19,8 @@
 #include  <stdio.h>           
 #include "unistd.h" 
 #include <iostream>
-#include "DeflatingStream.h"
-
+// #include "DeflatingStream.h"
+#include <utility>
 #include <vector>
 #include <fstream>
 #include <fcntl.h>
@@ -30,7 +30,7 @@
 
 
 using namespace std;
-using namespace Poco;
+// using namespace Poco;
 
 char buff1[] = {"12345688888889"};
 char buff2[] = {"BAAAAAAAAAAAAAAAAB"};
@@ -42,14 +42,24 @@ std::string age;
 
 int urlexpere = 0;
 
+// std::pair <int,int> foo;
+// std::pair <int,int> bar;
+
+// foo = std::make_pair (10, 20);
+// bar = std::make_pair (10.5, 'A'); / 
+
+
 int main()
 {
-    vector<std::string> strevctor;
+    // vector<std::string> strevctor;
+	// strevctor.resize(1024);
+	vector<std::string, std::pair<int,int>> test;
+	// test.assign("npb",std::make_pair(173,70));
 
+	// std::cout  << test.data()->c_str() << std::endl;
+	
 
-    // vector<uint16_t> uintevctor;
-
-	strevctor.resize(1024);
+	
 
 
 
