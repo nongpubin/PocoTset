@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-22 21:48:09
- * @LastEditTime: 2021-02-05 10:53:06
+ * @LastEditTime: 2021-02-09 21:48:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \PocoTset\STLtest\vector.cpp
@@ -53,15 +53,26 @@ int main()
 {
     // vector<std::string> strevctor;
 	// strevctor.resize(1024);
-	vector<std::string, std::pair<int,int>> test;
+	// vector<std::string, std::pair<int,int>> test;
 	// test.assign("npb",std::make_pair(173,70));
 
 	// std::cout  << test.data()->c_str() << std::endl;
-	
 
-	
+	// std::string name = "123";
+	// int h = 12;
+	// int g = 22;
 
-
+	std::pair<int , int >  haha(12, 22);
+	std::cout << haha.first << std::endl;
+ 
+	std::pair<std::string, std::pair<std::int32_t, std::int32_t>> test1("npb",std::make_pair(112,13));
+	std::cout << test1.first << std::endl;
+	std::cout << test1.second.first << std::endl;
+	std::cout << test1.second.second << std::endl;
+	test1.second.first = 225;
+	test1.first = "hello";
+	std::cout << test1.second.first << std::endl;
+	std::cout << test1.first << std::endl;
 
 return 0;
 #if 0
