@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-10 16:41:01
- * @LastEditTime: 2021-02-10 17:22:55
+ * @LastEditTime: 2021-02-28 23:11:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \npb\DesignPattern\DependenceInversionPrinciple\DependenceInversionPrinciple.cpp
@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <thread>
+
 
 
 class Reader
