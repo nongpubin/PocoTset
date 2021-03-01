@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-10 16:41:01
- * @LastEditTime: 2021-02-28 23:11:17
+ * @LastEditTime: 2021-03-01 23:11:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \npb\DesignPattern\DependenceInversionPrinciple\DependenceInversionPrinciple.cpp
@@ -47,7 +47,6 @@ public:
                 << std::endl;
     }
 };
-
 
 class NewPaper : public Reader
 {
