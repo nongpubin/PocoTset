@@ -1,14 +1,24 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-28 22:19:36
+ * @LastEditTime: 2021-03-07 11:34:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \npb\DesignPattern\17.IteratorPattern\2.Code\Aggregate.h
+ */
 #ifndef __AGGREGATE_H__
 #define __AGGREGATE_H__
 
+#include <iostream>
+#include <string>
 #include <vector>
 using namespace std;
 
-// Ç°ÏòÉùÃ÷£¬ÒòÎªÁ½¸öÀà»¥ÏàÒıÓÃ
+// å‰å‘å£°æ˜ï¼Œå› ä¸ºä¸¤ä¸ªç±»äº’ç›¸å¼•ç”¨
 class Iterator;
 class RemoteControl;
 
-// ³éÏó¾ÛºÏÀà Aggregate
+// æŠ½è±¡èšåˆç±» Aggregate
 class Aggregate
 {
 public:
@@ -16,15 +26,15 @@ public:
 	virtual Iterator* createIterator() = 0;
 };
 
-// ¾ßÌå¾ÛºÏÀà Television
+// å…·ä½“èšåˆç±» Television
 class Television :public Aggregate
 {
 public:
 	Television();
 	Television(vector<string> iChannelList);
-	// ÊµÏÖ´´½¨µü´úÆ÷
+	// å®ç°åˆ›å»ºè¿­ä»£å™¨
 	Iterator* createIterator();
-	// »ñÈ¡×ÜµÄÆµµÀÊıÄ¿
+	// è·å–æ€»çš„é¢‘é“æ•°ç›®
 	int getTotalChannelNum();
 	void play(int i);
 private:

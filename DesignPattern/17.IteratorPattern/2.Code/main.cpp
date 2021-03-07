@@ -1,18 +1,26 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-28 22:19:36
+ * @LastEditTime: 2021-03-07 11:35:11
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \npb\DesignPattern\17.IteratorPattern\2.Code\main.cpp
+ */
 #include <iostream>
 #include "Iterator.h"
 
 int main()
 {
-	vector<string> channelList = { "–¬Œ≈∆µµ¿", "≤∆æ≠∆µµ¿", "ÃÂ”˝∆µµ¿", "µÁ”∞∆µµ¿", "“Ù¿÷∆µµ¿", "≈©“µ∆µµ¿", "Àƒ¥®Œ¿ ”", "≥…∂ºŒ¿ ”" };
-	// ¥¥Ω®µÁ ”
+	vector<string> channelList = { "Êñ∞ÈóªÈ¢ëÈÅì", "Ë¥¢ÁªèÈ¢ëÈÅì", "‰ΩìËÇ≤È¢ëÈÅì", "ÁîµÂΩ±È¢ëÈÅì", "Èü≥‰πêÈ¢ëÈÅì", "ÂÜú‰∏öÈ¢ëÈÅì", "ÂõõÂ∑ùÂç´ËßÜ", "ÊàêÈÉΩÂç´ËßÜ" };
+	// ÂàõÂª∫ÁîµËßÜ
 	Television *tv = new Television(channelList);
-	// ¥¥Ω®“£øÿ∆˜
+	// ÂàõÂª∫ÈÅ•ÊéßÂô®
 	Iterator *remoteControl = tv->createIterator();
 
-	// À≥–Ú±È¿˙
-	printf("À≥–Ú±È¿˙:\n");
+	// È°∫Â∫èÈÅçÂéÜ
+	printf("È°∫Â∫èÈÅçÂéÜ:\n");
 	remoteControl->first();
-	// ±È¿˙µÁ ”À˘”–∆µµ¿
+	// ÈÅçÂéÜÁîµËßÜÊâÄÊúâÈ¢ëÈÅì
 	while (remoteControl->hasNext()){
 		remoteControl->currentChannel();
 		remoteControl->next();
@@ -20,10 +28,10 @@ int main()
 
 	printf("\n\n");
 
-	// ƒÊ–Ú±È¿˙
-	printf("ƒÊ–Ú±È¿˙:\n");
+	// ÈÄÜÂ∫èÈÅçÂéÜ
+	printf("ÈÄÜÂ∫èÈÅçÂéÜ:\n");
 	remoteControl->last();
-	// ±È¿˙µÁ ”À˘”–∆µµ¿
+	// ÈÅçÂéÜÁîµËßÜÊâÄÊúâÈ¢ëÈÅì
 	while (remoteControl->hasPrevious()){
 		remoteControl->currentChannel();
 		remoteControl->previous();
