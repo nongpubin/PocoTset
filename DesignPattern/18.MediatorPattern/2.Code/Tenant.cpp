@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-28 22:19:36
+ * @LastEditTime: 2021-03-07 12:21:01
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \npb\DesignPattern\18.MediatorPattern\2.Code\Tenant.cpp
+ */
 #include "Colleague.h"
 #include "Mediator.h"
 
@@ -12,10 +20,10 @@ Tenant::Tenant(string iName){
 }
 
 void Tenant::ask(){
-	printf("×â¿Í%sÑ¯ÎÊ·¿¶«ĞÅÏ¢\n", name.c_str()); 
+	printf("ç§Ÿå®¢%sè¯¢é—®æˆ¿ä¸œä¿¡æ¯\n", name.c_str()); 
 	(this->getMediator())->operation(this);
 }
 
 void Tenant::answer(){
-	printf("×â¿ÍĞÕÃû£º%s\n", name.c_str());
+	printf("ç§Ÿå®¢å§“åï¼š%s\n", name.c_str());
 }

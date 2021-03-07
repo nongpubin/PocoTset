@@ -1,6 +1,15 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-28 22:19:36
+ * @LastEditTime: 2021-03-07 12:19:01
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \npb\DesignPattern\18.MediatorPattern\2.Code\Colleague.h
+ */
 #ifndef __COLLEAGUE_H__
 #define __COLLEAGUE_H__
 
+#include <iostream>
 #include "common.h"
 using namespace std;
 
