@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-28 22:19:36
+ * @LastEditTime: 2021-03-09 00:26:10
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \npb\DesignPattern\20.ObserverPattern\2.Code\Observer.h
+ */
 #ifndef __OBSERVER_H__
 #define __OBSERVER_H__
 
@@ -7,6 +15,7 @@ using namespace std;
 #include "AllyCenter.h"
 
 // ≥ÈœÛπ€≤Ï’ﬂ Observer
+
 class Observer
 {
 public:
