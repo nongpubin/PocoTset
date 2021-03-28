@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-13 23:17:24
- * @LastEditTime: 2021-03-28 12:05:17
+ * @LastEditTime: 2021-03-28 12:34:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \npb\AlgorithmsAndStructures\list.cpp
@@ -49,26 +49,14 @@ void create_list(list_node **node)
 void insert_end(list_node *node, int data)
 {
     list_node *current = node;
-    list_node *prve = NULL;
+    list_node *new_node = NULL;
     assert(current != NULL);
 
-    list_node tmp;
-    tmp.next = NULL;
-    tmp.value = data;
-
-    while (current->next != NULL) {
-        prve = current;
-        current = current->next;
-    }
-    current->next = &tmp;
-    prve->value = data;
+    new_node = (list_node *)malloc(sizeof(list_node));
+    new_node->next = NULL;
+    new_node->value = data;
+    current->next = new_node;
 }
-
-// void insert_head(list_node *node, int data)
-// {
-//     list_node *current = node;
-
-// }
 
 //遍历输出节点数据
 void show_data(list_node *node)
@@ -87,6 +75,7 @@ void show_data(list_node *node)
 int main() {
     list_node *test = NULL;
     create_list(&test);
+    insert_end(test, 888);
     show_data(test);
     
     return 0;
