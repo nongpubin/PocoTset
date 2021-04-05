@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-13 23:17:24
- * @LastEditTime: 2021-04-05 11:46:43
+ * @LastEditTime: 2021-04-05 11:52:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \npb\AlgorithmsAndStructures\list.cpp
@@ -80,22 +80,19 @@ void delete_data(list_node **node, int data)
     }
 
     while (NULL != current->next)	{
-        prev = current;					// 在p走向下一个节点前先将其保存
-		current = current->next;			// 走到下一个节点，也就是循环增量
-		// 判断这个节点是不是我们要找的那个节点
+        prev = current;					 
+		current = current->next;			 
 		if (current->value == data)
         {
 			if (NULL == current->next)
 			{
-				// 尾节点
-				prev->next = NULL;		// 原来尾节点的前一个节点变成新尾节点
+				prev->next = NULL;		 
                 printf("found data %d, delete it \r\n", current->value);
-				free(current);					// 释放原来的尾节点的内存
+				free(current);					 
 			}
 			else
 			{
-				// 普通节点
-				prev->next = current->next;	// 要删除的节点的前一个节点和它的后一个节点相连，这样就把要删除的节点给摘出来了
+				prev->next = current->next;	 
                 printf("found data %d, delete it \r\n", current->value);
 				free(current);
 			}
