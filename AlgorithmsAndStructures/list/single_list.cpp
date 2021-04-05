@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-13 23:17:24
- * @LastEditTime: 2021-04-05 11:52:48
+ * @LastEditTime: 2021-04-05 22:28:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \npb\AlgorithmsAndStructures\list.cpp
@@ -133,14 +133,14 @@ void show_data(list_node *node)
 
 
 int main() {
-    list_node *test = NULL;
+    list_node *test;
     create_list(&test);
     insert_end(test, 888);
     insert_end(test, 123);
     show_data(test);
-    delete_data(&test, 123);
+    // delete_data(&test, 123);
     
-    show_data(test);
+    // show_data(test);
     // delete_all(test);
     
     return 0;
